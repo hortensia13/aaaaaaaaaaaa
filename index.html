@@ -21,6 +21,48 @@ h2 { margin-top: 40px; font-size: 1.3rem; }
 display: grid;
 gap: 6px;
 grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+
+}
+.ramo {
+padding: 12px;
+border-radius: 8px;
+cursor: pointer;
+border: 2px solid transparent;
+text-align: center;
+font-size: 0.9rem;
+transition: all 0.2s ease-in-out;
+}
+.ramo.basic { background: var(--basic); }
+.ramo.prof { background: var(--prof); }
+.ramo.clin { background: var(--clin); }
+.ramo.elect { background: var(--elect); }
+.ramo.intern { background: var(--intern); }
+.ramo.pendiente { border-color: var(--pend); }
+.ramo.aprobado { background: #d0f0c0; text-decoration: line-through; }
+.ramo.reprobado { background: #f8d7da; }
+.legend {
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+margin: 30px auto;
+max-width: 800px;
+justify-content: center;
+}
+.legend span {
+display: flex;
+align-items: center;
+gap: 6px;
+font-size: 0.8rem;
+}
+.legend .box {
+width: 16px;
+height: 16px;
+border-radius: 4px;
+display: inline-block;
+}
+</style>
+</head>
+<body>
 <h1>Malla Interactiva de Obstetricia y Puericultura – ULagos Osorno 🩷</h1>
 <p style="text-align:center; max-width:800px; margin: 0 auto 20px">Haz clic en cada ramo para marcarlo como aprobado, reprobado o pendiente. Los colores representan distintas áreas temáticas.</p>
 
